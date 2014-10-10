@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/"?>
+<?xml-stylesheet type="text/css" href="chrome://html5-media-toggle-spenibus/content/style.css"?>
+
+<!DOCTYPE overlay>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+   <script type="application/x-javascript" src="chrome://html5-media-toggle-spenibus/content/overlay.js" />
+
+   <!-- Firefox -->
+   <toolbarpalette id="BrowserToolbarPalette">
+
+      <!-- toggle html5 media player -->
+      <toolbarbutton
+         id="spenibus_html5_media_toggle_button"
+         label="toggle html5 media support"
+         tooltiptext="toggle html5 media support"
+         class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+
+   </toolbarpalette>
+</overlay>
