@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="chrome://global/skin/"?>
-<?xml-stylesheet type="text/css" href="chrome://html5-media-toggle-spenibus/content/style.css"?>
+<?xml-stylesheet type="text/css" href="chrome://html5-media-toggle-spenibus/content/overlay.css"?>
 
 <!DOCTYPE overlay>
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
@@ -10,12 +10,19 @@
    <!-- Firefox -->
    <toolbarpalette id="BrowserToolbarPalette">
 
-      <!-- toggle html5 media player -->
+      <!-- toggle html5 media player support -->
       <toolbarbutton
-         id="spenibus_html5_media_toggle_button"
+         id="spenibus_html5_media_toggle_button_support"
          label="toggle html5 media support"
          tooltiptext="toggle html5 media support"
-         class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+         class="toolbarbutton-1 chromeclass-toolbar-additional spenibus_html5_media_toggle_button"/>
+
+      <!-- toggle html5 media player autoplay -->
+      <toolbarbutton
+         id="spenibus_html5_media_toggle_button_autoplay"
+         label="toggle html5 media autoplay"
+         tooltiptext="toggle html5 media autoplay"
+         class="toolbarbutton-1 chromeclass-toolbar-additional spenibus_html5_media_toggle_button"/>
 
    </toolbarpalette>
 </overlay>
