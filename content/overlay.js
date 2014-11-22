@@ -90,11 +90,7 @@ var spenibus_html5MediaToggle = {
 
       // try toolbar palette if document yielded nothing
       if(b == null) {
-         for(var i=0; i<gNavToolbox.palette.childNodes.length; ++i) {
-            if(gNavToolbox.palette.childNodes[i].id == id) {
-               b = gNavToolbox.palette.childNodes[i];
-            }
-         }
+         b = gNavToolbox.palette.querySelector('#'+id);
       }
 
       return b;
