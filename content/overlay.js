@@ -22,6 +22,7 @@ var spenibus_html5MediaToggle = {
       'media.wave.enabled',
       'media.webaudio.enabled',
       'media.webm.enabled',
+      'media.fragmented-mp4.enabled',
    ],
 
 
