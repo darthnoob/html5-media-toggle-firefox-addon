@@ -8,7 +8,7 @@
                 em:description="Toggles internal support for media files (usually found in the html5 video tag)"
                 em:creator="spenibus"
                 em:id="html5-media-toggle@spenibus"
-                em:version="20151219-2205"
+                em:version="20151219-2217"
                 em:homepageURL="http://spenibus.net">
 
       <em:targetApplication><!-- Firefox -->

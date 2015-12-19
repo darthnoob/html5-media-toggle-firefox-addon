@@ -33,8 +33,8 @@ var spenibus_html5MediaToggle = (function() {
 
 
     //******************************************************************** prefs
-    prefs_autoplay = 'media.autoplay.enabled';
-    prefs_support  = [
+    s.prefs_autoplay = 'media.autoplay.enabled';
+    s.prefs_support  = [
         'media.directshow.enabled', // 0:reference
         'media.fragmented-mp4.enabled',
         'media.mp4.enabled',
@@ -61,9 +61,12 @@ var spenibus_html5MediaToggle = (function() {
     //************************************************************ init/observer
     s.init = function() {
 
+
         // get prefs service root branch
         s.ps = Components.classes["@mozilla.org/preferences-service;1"]
-            .getService(Components.interfaces.nsIPrefService);
+            .getService(Components.interfaces.nsIPrefService)
+            .QueryInterface(Components.interfaces.nsIPrefBranch);
+
 
         // add observer
         s.ps.addObserver('', s, false);
